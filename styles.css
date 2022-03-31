@@ -1,0 +1,22 @@
+:root {
+  --moderateCyan: hsl(176, 50%, 47%);
+  --darkCyan: hsl(176, 72%, 28%);
+  --black: hsl(0, 0%, 0%);
+  --darkGray: hsl(0, 0%, 48%);
+  --bluish: hsl(228, 45%, 44%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Commissioner", sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-image {
+  background-image: url("./images/image-hero-mobile.jpg");
+}
