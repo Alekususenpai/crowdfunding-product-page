@@ -2,7 +2,8 @@
   --moderateCyan: hsl(176, 50%, 47%);
   --darkCyan: hsl(176, 72%, 28%);
   --black: hsl(0, 0%, 0%);
-  --darkGray: hsl(0, 0%, 48%);
+  --darkGray: hsla(0, 0%, 48%);
+  --darkGrayBG: rgba(122, 122, 122, 0.075);
   --bluish: hsl(228, 45%, 44%);
 }
 
@@ -12,11 +13,79 @@
 
 body {
   font-family: "Commissioner", sans-serif;
-  font-size: 16px;
   margin: 0;
   padding: 0;
 }
 
-.hero-image {
+.container {
+  width: 85%;
+  padding: 1em 0;
+  margin: 0 auto;
+}
+
+.hero-section {
   background-image: url("./images/image-hero-mobile.jpg");
+  background-size: cover;
+  background-position: center center;
+  min-height: 400px;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#menu {
+  display: none;
+}
+
+main {
+  background-color: var(--darkGrayBG);
+}
+
+button {
+  color: white;
+  font-weight: 700;
+  background-color: var(--moderateCyan);
+  border: none;
+  border-radius: 2em;
+  padding: 1.5em 3.5em;
+}
+
+.white-box-container {
+  background-color: white;
+  padding: 2em;
+  border-radius: 0.5em;
+  position: relative;
+  margin-bottom: 2em;
+}
+
+.white-box-container:first-of-type {
+  text-align: center;
+  top: -70px;
+}
+
+.aligner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+p {
+  color: var(--darkGray);
+}
+
+#logo-mastercraft {
+  position: absolute;
+  top: -30px;
+  left: 43%;
+}
+
+.card {
+  width: 100%;
+  border: 1px solid var(--darkGray);
+  border-radius: 0.5em;
+  margin: 1.5em auto;
+  padding: 1em;
 }
