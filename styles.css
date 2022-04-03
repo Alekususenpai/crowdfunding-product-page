@@ -78,8 +78,11 @@ p {
 
 #logo-mastercraft {
   position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
   top: -30px;
-  left: 48%;
 }
 
 .card {
