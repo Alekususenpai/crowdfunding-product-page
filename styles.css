@@ -33,15 +33,29 @@ body {
 .hero {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  position: relative;
 }
 
-#menu {
+.menu {
   display: none;
+  position: absolute;
+  right: 0;
+  text-align: right;
+}
+
+.menu li {
+  list-style: none;
+  color: white;
+}
+
+.show {
+  display: block;
 }
 
 main {
   background-color: var(--darkGrayBG);
+  position: relative;
+  top: -55px;
 }
 
 button {
@@ -50,7 +64,8 @@ button {
   background-color: var(--moderateCyan);
   border: none;
   border-radius: 2em;
-  padding: 1.5em 3.5em;
+  padding: 1.3em 0;
+  width: 190px;
 }
 
 .white-box-container {
@@ -59,11 +74,6 @@ button {
   border-radius: 0.5em;
   position: relative;
   margin-bottom: 2em;
-}
-
-.white-box-container:first-of-type {
-  text-align: center;
-  top: -70px;
 }
 
 .aligner {
@@ -85,10 +95,51 @@ p {
   top: -30px;
 }
 
+.stats {
+  margin: 2.5em 0;
+}
+
+.stats p::after {
+  display: block;
+  content: "";
+  width: 40%;
+  height: 4px;
+  background: var(--darkGrayBG);
+  position: relative;
+  bottom: -20px;
+  margin: auto;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: var(--darkGrayBG);
+  border-radius: 1em;
+}
+
+.progress-bar-inside {
+  height: 1em;
+  width: 80%;
+  border-radius: 1em;
+  background-color: var(--moderateCyan);
+}
+
 .card {
   width: 100%;
-  border: 1px solid var(--darkGray);
+  border: 3px solid var(--darkGrayBG);
   border-radius: 0.5em;
   margin: 1.5em auto;
   padding: 1em;
+}
+
+.blue-h3 {
+  color: var(--moderateCyan);
+}
+
+.price {
+  display: flex;
+  align-items: center;
+}
+
+.price p {
+  margin-left: 0.5em;
 }
