@@ -143,6 +143,7 @@ p {
   padding: 1em;
 }
 
+
 .blue-h3 {
   color: var(--moderateCyan);
 }
@@ -165,9 +166,6 @@ p {
   top: 0;
 }
 
-input[type="radio"] {
-  background-color: yellowgreen;
-}
 
 /* Hide the browser's default radio button */
 .container input {
@@ -186,10 +184,6 @@ input[type="radio"] {
   outline: 1px solid rgba(128, 128, 128, 0.185);
 }
 
-/* On mouse-over, add a grey background color */
-.container:hover input ~ .checkmark {
-  background-color: rgb(204, 204, 204);
-}
 
 /* When the radio button is checked, add a blue background */
 .container input:checked ~ .checkmark {
