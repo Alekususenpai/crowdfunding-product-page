@@ -183,7 +183,7 @@ input[type="radio"] {
   width: 20px;
   border-radius: 50%;
   border: 5px solid white;
-  outline: 1px solid rgba(128, 128, 128, 0.185);
+  outline: 1px solid rgba(128, 128, 128, 0.184);
 }
 
 /* On mouse-over, add a grey background color */
