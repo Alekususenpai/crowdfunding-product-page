@@ -143,7 +143,6 @@ p {
   padding: 1em;
 }
 
-
 .blue-h3 {
   color: var(--moderateCyan);
 }
@@ -166,15 +165,12 @@ p {
   top: 0;
 }
 
-
-/* Hide the browser's default radio button */
 .container input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
 }
 
-/* Create a custom radio button */
 .checkmark {
   display: inline-block;
   height: 20px;
@@ -184,8 +180,6 @@ p {
   outline: 1px solid rgba(128, 128, 128, 0.185);
 }
 
-
-/* When the radio button is checked, add a blue background */
 .container input:checked ~ .checkmark {
   background-color: var(--moderateCyan);
 }
