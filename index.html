@@ -18,7 +18,7 @@
                     <div class="hero container">
                               <span><img src="./images/logo.svg" alt="workdesk image"></span>
                               <nav>
-                                        <span id="menu-icon" onclick="show()"><img src="./images/icon-hamburger.svg"
+                                        <span id="menu-icon"><img src="./images/icon-hamburger.svg"
                                                             alt="hamburger menu icon">
                                         </span>
                                         <img src="./images/icon-close-menu.svg" class="closebtn" alt="close menu"
@@ -38,7 +38,7 @@
                               <h2>Mastercraft Bamboo <br> Monitor Riser</h2>
                               <p> A beautiful & handcrafted monitor stand to reduce neck and eye strain.</p>
                               <div class="aligner">
-                                        <button> Back this project</button>
+                                        <button id="backPrjBtn"> Back this project</button>
                                         <input type="image" src="./images/icon-bookmark.svg" alt="bookmark">
                               </div>
                     </div>
@@ -134,9 +134,10 @@
                     </div>
                     <!-- Selection modal start -->
 
-                    <div class="modal container">
+                    <div class="modal container" id="modalSelection">
                               <h3>Back this project</h3>
-                              <span style="background-color: beige;"><img src="./images/icon-close-menu.svg"></span>
+                              <span style="background-color: beige;"><img src="./images/icon-close-menu.svg"
+                                                  id="modalCloseBtn"></span>
                               <p>Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p>
                               <div class="card">
                                         <input type="radio" id="pledge" name="modal" value="pledge">
@@ -169,9 +170,11 @@
                                                             <p>left</p>
                                                   </div>
                                                   <!-- Selected pledge start -->
-                                                  <p>Enter your pledge</p>
-                                                  <button>$25</button>
-                                                  <button>Continue</button>
+                                                  <div class="pledge">
+                                                            <p>Enter your pledge</p>
+                                                            <button>$25</button>
+                                                            <button>Continue</button>
+                                                  </div>
                                         </label>
                               </div>
                               <!-- Selected pledge end -->
@@ -217,8 +220,8 @@
 
                     <!-- Success modal start -->
 
-                    <div class="white-box-container container" style="text-align: center;">
-                              <img src="./images/icon-check.svg" alt="">
+                    <div class="white-box-container container" style="text-align: center;" id="tyModal">
+                              <img src="./images/icon-check.svg" alt="thank you message">
                               <h2>Thanks for your support!</h2>
                               <p>
                                         Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor
@@ -226,7 +229,7 @@
                                         will get
                                         an email once our campaign is completed.
                               </p>
-                              <button>Got it!</button>
+                              <button id="tyBtn">Got it!</button>
                     </div>
 
                     <!-- Success modal end -->
