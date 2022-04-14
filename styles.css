@@ -65,8 +65,8 @@ body {
 
 main {
   background-color: var(--darkGrayBG);
-  position: relative;
-  top: -55px;
+  position: absolute;
+  transform: translateY(-55px);
 }
 
 button {
@@ -115,7 +115,7 @@ p {
   display: block;
   content: "";
   width: 40%;
-  height: 4px;
+  height: 2px;
   background: var(--darkGrayBG);
   position: relative;
   bottom: -20px;
@@ -162,10 +162,10 @@ p {
   margin-right: auto;
   left: 0;
   right: 0;
-  top: 0;
+  top: -200px;
 }
 
-.container input {
+.container input[name="modal"] {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -182,4 +182,10 @@ p {
 
 .container input:checked ~ .checkmark {
   background-color: var(--moderateCyan);
+}
+
+.pledge,
+#modalSelection,
+#tyModal {
+  display: none;
 }
