@@ -19,7 +19,7 @@ body {
 }
 
 .container {
-  width: 85%;
+  width: 87%;
   padding: 1em 0;
   margin: 0 auto;
 }
@@ -76,14 +76,17 @@ button {
   background-color: var(--moderateCyan);
   border: none;
   border-radius: 2em;
-  padding: 1.3em 0;
-  width: 190px;
+  padding: 1em 2em;
+}
+
+button:first-of-type {
+  padding: 1.3em 3.7em;
 }
 
 .white-box-container,
 .modal {
   background-color: white;
-  padding: 2em;
+  padding: 1.5em;
   border-radius: 0.5em;
   position: relative;
   margin-bottom: 2em;
@@ -93,6 +96,16 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.alignerModal {
+  display: flex;
+  align-items: center;
+}
+
+.alignerModal h4 {
+  margin: 0.5em;
+  margin-left: 1em;
 }
 
 p {
@@ -158,7 +171,8 @@ p {
   margin-left: 0.5em;
 }
 
-.modal, #tyModal {
+.modal,
+#tyModal {
   position: absolute;
   margin-left: auto;
   margin-right: auto;
