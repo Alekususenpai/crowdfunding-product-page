@@ -53,9 +53,7 @@ let tyBtn = document.getElementById('tyBtn');
 
 
 backPrjBtn.addEventListener('click', () => {
-          modalSelection.style.display = 'block';
-          document.body.style.backgroundColor = "gray";
-          document.body.style.opacity = 0.7;
+          modalSelection.style.display = 'block';;
 })
 
 modalCloseBtn.addEventListener('click', () => {
