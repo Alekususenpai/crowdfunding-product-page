@@ -3,7 +3,7 @@
   --darkCyan: hsl(176, 72%, 28%);
   --black: hsl(0, 0%, 0%);
   --darkGray: hsla(0, 0%, 48%);
-  --darkGrayBG: rgba(122, 122, 122, 0.075);
+  --darkGrayBG: rgba(122, 122, 122, 0.171);
   --bluish: hsl(228, 45%, 44%);
 }
 
@@ -43,7 +43,7 @@ body {
   position: absolute;
   right: 0;
   top: 3em;
-  background-color: white;
+  background-color: rgb(156, 28, 28);
   border-radius: 0.5em;
   width: 100%;
 }
@@ -79,8 +79,15 @@ button {
   padding: 1em 2em;
 }
 
-button:first-of-type {
-  padding: 1.3em 3.7em;
+button#backPrjBtn {
+  padding: 1.4em 4em;
+}
+
+button[title="price"] {
+  background-color: white;
+  color: var(--darkGrayBG);
+  border: 2px solid var(--darkGrayBG);
+  padding: 1em 2em;
 }
 
 .white-box-container,
@@ -152,7 +159,7 @@ p {
 
 .card {
   width: 100%;
-  border: 3px solid var(--darkGrayBG);
+  border: 2px solid var(--darkGrayBG);
   border-radius: 0.5em;
   margin: 1.5em auto;
   padding: 1em;
@@ -201,7 +208,45 @@ p {
 }
 
 .pledge,
-#modalSelection,
-#tyModal {
+#tyModal,
+#modalSelection {
   display: none;
+}
+
+@media screen and (min-width: 750px) {
+  .card {
+    width: 20%;
+  }
+  .hero-section {
+    background-image: url("./images/image-hero-desktop.jpg");
+  }
+  .container {
+    width: 77%;
+  }
+  .white-box-container {
+    width: 50%;
+  }
+  main {
+    transform: translateY(-85px);
+  }
+  .hero {
+    align-items: center;
+  }
+  .menu {
+    display: block;
+    display: flex;
+    position:static;
+    background-color: transparent;
+  }
+  
+  .menu li {
+    list-style: none;
+    color: white;
+    border-bottom: none;
+    padding-right: 0.4em;
+  }
+  .closebtn,
+  #menu-icon{
+    display: none;
+  }
 }
