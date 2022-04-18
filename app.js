@@ -18,21 +18,25 @@ closeIcon.addEventListener('click', () => {
 
 let pledge = document.querySelector('.pledge');
 let inputs = document.querySelectorAll('input[name="modal"]');
+let cards = document.querySelectorAll(".cards");
+
+//for card[input]//
 
 for (let input of inputs) {
 
           input.addEventListener('change', () => {
-                    let card = input.parentElement;
-                    if (card.contains(pledge)) {
-                              pledge.style.display = 'block';
+                    let parent = input.closest(".card");
+                    if (parent.contains(pledge)) {
+                              pledge.style.display = 'flex';
                     } else {
                               pledge.style.display = 'none';
                     }
                     for (let input of inputs) {
+                              let parent = input.closest(".card");
                               if (input.checked === true) {
-                                        input.parentElement.style.borderColor = "#3BB3AB";
+                                        parent.style.borderColor = "#3BB3AB";
                               } else {
-                                        input.parentElement.style.borderColor = "rgba(122, 122, 122, 0.075)";
+                                        parent.style.borderColor = "rgba(122, 122, 122, 0.075)";
                               }
 
                     }
