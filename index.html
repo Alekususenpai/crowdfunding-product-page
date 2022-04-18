@@ -44,17 +44,19 @@
                     </div>
 
                     <div class="white-box-container container" style="text-align: center;">
-                              <div class="stats">
-                                        <h1>$89,914</h1>
-                                        <p>of $100,000 backed</p>
-                              </div>
-                              <div class="stats">
-                                        <h1> 5,007</h1>
-                                        <p>total backers</p>
-                              </div>
-                              <div class="stats">
-                                        <h1>56</h1>
-                                        <p>days left</p>
+                              <div class="stats-container">
+                                        <div class="stats">
+                                                  <h1>$89,914</h1>
+                                                  <p>of $100,000 backed</p>
+                                        </div>
+                                        <div class="stats">
+                                                  <h1> 5,007</h1>
+                                                  <p>total backers</p>
+                                        </div>
+                                        <div class="stats">
+                                                  <h1>56</h1>
+                                                  <p>days left</p>
+                                        </div>
                               </div>
                               <div class="progress-bar">
                                         <div class="progress-bar-inside"></div>
@@ -82,8 +84,10 @@
                                         to allow notepads, pens, and USB sticks to be stored under the stand.</p>
 
                               <div class="card">
-                                        <h3>Bamboo Stand</h3>
-                                        <h3 class="blue-h3">Pledge $25 or more</h3>
+                                        <div class="aligner2">
+                                                  <h3>Bamboo Stand</h3>
+                                                  <h3 class="blue-h3">Pledge $25 or more</h3>
+                                        </div>
                                         <p>You get an ergonomic stand made of natural bamboo. You've helped us launch
                                                   our
                                                   promotional
@@ -91,52 +95,62 @@
                                                   and
                                                   you’ll be added to a special Backer member list.</p>
 
-                                        <div class="price">
-                                                  <h2>101</h2>
-                                                  <p>left</p>
+                                        <div class="aligner2">
+                                                  <div class="price">
+                                                            <h2>101</h2>
+                                                            <p>left</p>
+                                                  </div>
+                                                  <button>Select Reward</button>
                                         </div>
-
-                                        <button>Select Reward</button>
                               </div>
 
                               <div class="card">
-                                        <h3>Black Edition Stand</h3>
-                                        <h3 class="blue-h3">Pledge $75 or more</h3>
+                                        <div class="aligner2">
+                                                  <h3>Black Edition Stand</h3>
+                                                  <h3 class="blue-h3">Pledge $75 or more</h3>
+                                        </div>
                                         <p>You get a Black Special Edition computer stand and a personal thank you.
                                                   You’ll
                                                   be added
                                                   to our
                                                   Backer
                                                   member list. Shipping is included.</p>
-                                        <div class="price">
-                                                  <h2>64</h2>
-                                                  <p>left</p>
+                                        <div class="aligner2">
+                                                  <div class="price">
+                                                            <h2>64</h2>
+                                                            <p>left</p>
+                                                  </div>
+                                                  <button>Select Reward</button>
                                         </div>
                               </div>
 
                               <div class="card" style="pointer-events: none;
                               opacity: 0.4;">
-                                        <h3>Mahogany Special Edition</h3>
-                                        <h3 class="blue-h3">Pledge $200 or more</h3>
+                                        <div class="aligner2">
+                                                  <h3>Mahogany Special Edition</h3>
+                                                  <h3 class="blue-h3">Pledge $200 or more</h3>
+                                        </div>
                                         <p> You get two Special Edition Mahogany stands, a Backer T-Shirt, and a
                                                   personal
                                                   thank you.
                                                   You’ll be
                                                   added
                                                   to our Backer member list. Shipping is included.</p>
-                                        <div class="price">
-                                                  <h2>0</h2>
-                                                  <p>left</p>
+                                        <div class="aligner2">
+                                                  <div class="price">
+                                                            <h2>0</h2>
+                                                            <p>left</p>
+                                                  </div>
+                                                  <button disabled="disabled" style="background-color: gray;">Out of
+                                                            Stock</button>
                                         </div>
-                                        <button disabled="disabled" style="background-color: gray;">Out of
-                                                  Stock</button>
                               </div>
                     </div>
                     <!-- Selection modal start -->
 
-                    <div class="modal container" id="modalSelection">
+                    <div class="modal white-box-container" id="modalSelection">
                               <div class="aligner">
-                                        <h3>Back this project</h3>
+                                        <h2 class="heading">Back this project</h2>
                                         <span><img src="./images/icon-close-modal.svg" id="modalCloseBtn"></span>
                               </div>
                               <p>Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p>
@@ -166,7 +180,7 @@
                                                             <input type="radio" id="bamboo" name="modal"
                                                                       value="bamboo"><span class="checkmark"></span>
                                                   </div>
-                                                  <div>
+                                                  <div class="aligner2">
                                                             <h4>Bamboo Stand</h4>
                                                             <h4 class="blue-h3">Pledge $25 or more</h4>
                                                   </div>
@@ -188,9 +202,11 @@
                                                   <!-- Selected pledge start -->
                                                   <div class="pledge">
                                                             <p>Enter your pledge</p>
-                                                            <button title="price">$<span
-                                                                                style="color: black; padding: 0 0.7em;">25</span></button>
-                                                            <button>Continue</button>
+                                                            <div>
+                                                                      <button title="price">$<span
+                                                                                          style="color: black; padding: 0 0.7em;">25</span></button>
+                                                                      <button>Continue</button>
+                                                            </div>
                                                   </div>
                                         </label>
                               </div>
@@ -201,7 +217,7 @@
                                                             <input type="radio" id="black" name="modal" value="black">
                                                             <span class="checkmark"></span>
                                                   </div>
-                                                  <div>
+                                                  <div class="aligner2">
                                                             <h4>Black Edition Stand</h4>
                                                             <h4 class="blue-h3">Pledge $75 or more</h4>
                                                   </div>
@@ -227,18 +243,31 @@
                               <!-- Selected pledge end -->
                               <div class="card" style="pointer-events: none;
                               opacity: 0.4;">
-                                        <h4>Mahogany Special Edition</h4>
-                                        <h4 class="blue-h3">Pledge $200 or more</h4>
-                                        <p>
-                                                  You get two Special Edition Mahogany stands, a Backer T-Shirt, and a
-                                                  personal thank you. You’ll be
-                                                  added
-                                                  to our Backer member list. Shipping is included.
-                                        </p>
-                                        <div class="price">
-                                                  <h2>0</h2>
-                                                  <p>left</p>
+                                        <div class="alignerModal">
+                                                  <div>
+                                                            <input type="radio" id="black" name="modal" value="black">
+                                                            <span class="checkmark"></span>
+                                                  </div>
+                                                  <div class="aligner2">
+                                                            <h4>Mahogany Special Edition</h4>
+                                                            <h4 class="blue-h3">Pledge $200 or more</h4>
+                                                  </div>
                                         </div>
+                                        <label for="black">
+                                                  <p>
+                                                            You get two Special Edition Mahogany stands, a Backer
+                                                            T-Shirt, and a
+                                                            personal thank you. You’ll be
+                                                            added
+                                                            to our Backer member list. Shipping is included.
+                                                  </p>
+                                                  <div class="price">
+                                                            <h2>0</h2>
+                                                            <p>left</p>
+                                                  </div>
+                                        </label>
+
+
                               </div>
                     </div>
 
