@@ -88,6 +88,10 @@ button {
   padding-top: 0.5em;
 }
 
+.modal h4:first-of-type:hover{
+  color: var(--moderateCyan);
+}
+
 button#backPrjBtn {
   width: 200px;
   padding: 1.3em;
